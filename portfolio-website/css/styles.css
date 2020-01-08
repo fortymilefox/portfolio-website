@@ -1,0 +1,276 @@
+/* Portfolio Style Sheet*/
+/*
+Colors used
+
+Background Color (Alice Blue): #F0F8FF;
+*/
+
+body{
+  background-color: #F0F8FF;    /* alice blue */
+  font-family: 'Gelasio', serif;
+  font-weight: 400;
+  font-size: 16px;
+  /*Sets the fort size to 16px */
+  line-height: 1.6;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.page-header{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item{
+  flex: 0 1 200px;
+}
+
+.page-header .page-header__item:last-child{
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list{
+  list-style-type: none;
+}
+
+.navigation-list li{
+display: inline-block;
+margin-left: 15px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+table{
+  width: 600px;
+}
+
+th {
+  font-size: 90%;
+  font-weight:400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+  text-align: left;
+}
+
+tr.even{
+  background-color: #efefef;
+}
+
+tr:hover{
+  background-color: #c3e6e5
+}
+
+th, td {
+  padding: 7px 10px 10px 10px;
+}
+
+a{
+  color: #357b70;
+}
+
+a:visited {
+  /*visted link*/
+  color: #05676e;
+}
+
+a:hover, a:focus{
+  /*No underlining when hovering over a link, make italic*/
+  text-decoration: none;
+}
+
+a: active {
+  /*selected link*/
+  color: #489c79
+}
+
+button,
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus{
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary{
+  background-color: #e0b354;
+  color: #2b2b2b;
+}
+
+.navigation-list__item--active{
+  text-decoration: none;
+}
+
+.profile__portrait{
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear:both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile,
+.contact,
+.about__me,
+.work{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+fieldset{
+  width: 350px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.social-logos{
+  width: 50px
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid__item{
+  background-color: lightgray;
+}
+
+.header-logo{
+  float: left;
+  width: 200px;
+}
+
+#baltimore path:nth-child(1){
+  stroke-dasharray: 610px;
+  stroke-dashoffset: 610px;
+  animation: line-anim 2s ease forwards;
+  stroke-linecap: square;
+}
+
+#baltimore path:nth-child(2){
+  stroke-dasharray: 506px;
+  stroke-dashoffset: 506px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+
+#baltimore path:nth-child(3){
+  stroke-dasharray: 239px;
+  stroke-dashoffset: 239px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+#baltimore path:nth-child(4){
+  stroke-dasharray: 314px;
+  stroke-dashoffset: 314px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+
+#baltimore path:nth-child(5){
+  stroke-dasharray: 239px;
+  stroke-dashoffset: 239px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+#baltimore path:nth-child(6){
+  stroke-dasharray: 668px;
+  stroke-dashoffset: 668px;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+#baltimore path:nth-child(7){
+  stroke-dasharray: 433px;
+  stroke-dashoffset: 433px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+#baltimore path:nth-child(8){
+  stroke-dasharray: 246px;
+  stroke-dashoffset: 246px;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+
+#baltimore path:nth-child(9){
+  stroke-dasharray: 515px;
+  stroke-dashoffset: 515px;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset:0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap:10px;
+  }
+  .grid__item:last-child{
+    grid-column:auto / auto;
+    grid-row:auto / auto;
+  }
+  h1{
+    font-size: 22px;
+  }
+}

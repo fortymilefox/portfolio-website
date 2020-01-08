@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keith Gordon's Portfolio</title>
+  <link rel= "shortcut icon" href= "https://www.wikipedia.org/static/favicon/wikipedia.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <!---header including logo & main nav-->
+  <header class="page-header">
+    <!--Add logo here-->
+    <img src ="img/kg_logo.png" alt ="logo" class="page-header__item header-logo">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href ="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation">
+          <a href ="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href ="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <h1>Contact</h1>
+    <div>
+      Keith Gordon <br>
+      4828 N. State Rd. 7<br>
+      Coral Springs, FL. 33073 <br>
+      <br>
+      Tel: <a href="tel:+14438137455">(443) 813-7455</a><br>
+      Email: <a href="mailto:a.keithgordon27@gmail.com"> a.keithgordon(at)gmail.com</a><br>
+      <br>
+      <a href="mailto:a.keithgordon27@gmail.com"> Contact me </a>
+    </div>
+  </div>
+  <br>
+  <br>
+    <div>
+      <form action="" method="post" id="contact-form">
+        <fieldset class="contact"><legend>Tell Me Something:</legend>
+          <!--submit Email-->
+          <label class= "standard-label" for="contact-email"> Email: </label>
+          <input type ="email" id="contact-email" required>
+          <br>
+          <!--submit Telephone-->
+          <label class= "standard-label" for="contact-tel"> Telephone: </label>
+          <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]d{4}">
+          <br>
+          <!--submit Message-->
+          <label class="standard-label" for="message">Message: </label>
+          <br>
+          <textarea id="message" maxlength="240"name="name" rows="8" cols="50"></textarea>
+          <br>
+          <input type="submit" value="Send message">
+      </fieldset>
+      </form>
+
+    </div>
+
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <!--Instagram-->
+      <img src="img/insta_logo.svg" alt="Instagram logo"/>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
+
+
+
+  </html>
