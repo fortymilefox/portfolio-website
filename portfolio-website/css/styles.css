@@ -97,7 +97,7 @@ a:hover, a:focus{
   text-decoration: none;
 }
 
-a: active {
+a:active{
   /*selected link*/
   color: #489c79
 }
